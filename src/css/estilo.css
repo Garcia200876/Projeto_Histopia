@@ -1,0 +1,305 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+header {
+    background-color: #0a0a2a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+#logo {
+    width: 80px;
+}
+#search {
+    width: 300px;
+    padding: 8px 15px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+#search:focus {
+    border-color: #007bff;
+}
+#options {
+    display: flex;
+    gap: 15px;
+}
+.icon_nav {
+    width: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.icon_nav:hover {
+    transform: scale(1.1);
+}
+p{
+    font-size:20px;
+}
+h2{
+    font-size: 60px;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+#logo{
+    height: 100px;
+    width: 110px;
+    margin-left: 20px;
+}
+.icon_nav{
+    height: 25px;
+    width: 25px;
+    margin-right: 15px;
+}
+#imagens{
+    width: 100%;
+    height: 573px;
+    margin-bottom: 50px;
+}
+.botao{
+    border: 20px solid white;
+    border-width: 10px;
+    border-radius: 15px;
+    box-shadow: 15px 18px #8d8d8d;
+}
+.logos{
+    width: 125px;
+    height: 100px;
+}
+#empresas{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.produtos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.card {
+    flex: 0 0 250px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.produtoimg {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.barra {
+    padding: 10px;
+}
+
+.shorttxt {
+    color: #333;
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.valorprod {
+    color: #0a0a2a;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.compra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carrinho {
+    display: flex;
+    align-items: center;
+    background: #0a0a2a;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+}
+.carrinho:hover{
+    background-color: #007bff;
+}
+.carrinho img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.coracao {
+    width: 25px;
+    cursor: pointer;
+}
+
+.seta {
+    width: 30px;
+    cursor: pointer;
+}
+
+#ultimate {
+    background-color: #0a0a2a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#ultimate2 {
+    display: flex;
+    align-items: center;
+}
+
+#carousel {
+    overflow: hidden;
+    width: 400px;
+}
+
+#carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.livros {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#ultimatedesc {
+    color:white;
+    padding-left: 20px;
+}
+
+.txtprice {
+    font-weight: bold;
+}
+
+#prev, #next {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 10px;
+}
+
+footer {
+    background: #0a0a2a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#towers {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tower h3 {
+    margin-bottom: 10px;
+}
+
+#symbols {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#symbols img {
+    width: 30px;
+    cursor: pointer;
+}
+@media (max-width: 500px) {
+    header{
+        height: 60px;
+    }
+    #logo{
+        height: 60px;
+        width: 65px;
+        margin-left: 20px;
+    }
+    .icon_nav{
+        height: 25px;
+        width: 25px;
+        margin-right: 10px;
+    }
+    #search{
+        width: 150px;
+    }
+    h2{
+        font-size: 35px;
+    }
+    p{
+        font-size: 12px;
+    }
+    #imagens{
+        height: 100%;
+    }
+    .produtos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        flex: 1 1 100%;
+        max-width: 90%;
+    }
+    #ultimate {
+        flex-direction: column;
+        text-align: center;
+    }
+    #ultimate2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    #ultimatedesc {
+        padding-left: 0;
+    }
+    .logos{
+        height: 40px;
+        width: 70px;
+    }
+
+    footer p{
+        font-size: 12px;
+    }
+    footer h2{
+        font-size: 20px;
+    }
+    #icon2{
+        width: 120px;
+        height: 120px;
+        margin-left: 135px;
+    }
+    .tower{
+        margin-left: 160px;
+        margin-right: 0px;
+        margin-top: 40px;
+    }
+    #towers {
+        flex-direction: column;
+        text-align: center;
+    }
+}
